@@ -19,7 +19,7 @@ jobs:
   print_var: 
     name: "echo an env var that is part of our project"
     command: |
-      echo $MY_ENV_VAR
+      echo $CAR
 workflows:
   # Name the workflow "welcome"
   welcome:
