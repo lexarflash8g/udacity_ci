@@ -25,8 +25,7 @@ jobs:
   print_pipeline_id:
     docker:
       - image: circleci/node:13.8.0
-    
-     commands:
+    commands:
       sayhello:
         description: "A very simple command for demonstration purposes"
         parameters:
