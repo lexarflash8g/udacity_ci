@@ -13,15 +13,15 @@ jobs:
       - run: echo "text in file" > ~/output.txt
       - persist_to_workspace:
           root: ~/
-         paths:
-           - outputs.txt    
-    print_output_file:
-      docker:
-        - image: circleci/node:13.8.0
-      steps:
-        - attach_workspace:
-            at: ~/
-        - run: cat ~/output.txt
+          paths:
+            - outputs.txt    
+  print_output_file:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: cat ~/output.txt
   print_world:
     docker:
       - image: circleci/node:13.8.0
